@@ -5,6 +5,14 @@ export const siteContent = {
     description: 'UK-based cybersecurity training provider specialising in both offensive and defensive cyber security education',
   },
 
+  company: {
+    name: 'SafeSkillz Limited',
+    registrationNumber: '', // Add company registration number when available
+    jurisdiction: 'England and Wales',
+    registeredOffice: 'London, United Kingdom',
+    vatNumber: '', // Add VAT number if applicable
+  },
+
   about: `SafeSkillz Limited is a UK-based cybersecurity training provider specialising in both offensive and defensive cyber security education for government, corporate and academic clients. Our programmes are designed by experienced industry professionals and accredited against recognised standards. We offer a full portfolio of hands-on training courses (both public and bespoke) that cover technical and managerial topics, all aligned with the UK's National Cyber Security Centre (NCSC) guidelines. Our expert-led sessions emphasise real-world skills and practical exercises to help organisations strengthen their cyber resilience.`,
 
   hero: {
@@ -255,9 +263,10 @@ export const siteContent = {
     subtitle: 'Content and training accredited in line with UK cybersecurity standards.',
     badge: 'Aligned with NCSC guidelines',
     links: [
-      { label: 'Privacy Policy', href: '/privacy' },
-      { label: 'Terms of Service', href: '/terms' },
-      { label: 'Accessibility', href: '/accessibility' },
+      { label: 'Privacy Policy', href: '/privacy-policy' },
+      { label: 'Cookie Policy', href: '/cookie-policy' },
+      { label: 'Terms & Conditions', href: '/terms' },
+      { label: 'Learner Terms', href: '/learner-terms' },
     ],
   },
 

@@ -6,10 +6,10 @@ import { Container } from '../ui/Container'
 
 const navLinks = [
   { label: 'Home', href: '/' },
-  { label: 'Trainings', href: '/trainings' },
-  { label: 'Alliances', href: '/alliances' },
-  { label: 'Our Work', href: '/work' },
-  { label: 'Team', href: '/team' },
+  { label: 'Courses', href: '/trainings' },
+  { label: 'Partners', href: '/alliances' },
+  { label: 'Case Studies', href: '/work' },
+  { label: 'About Us', href: '/team' },
   { label: 'Contact', href: '/contact' },
 ]
 
