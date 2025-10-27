@@ -16,13 +16,44 @@ export const Work = () => {
         keywords="cybersecurity case studies, training portfolio, corporate training, government cybersecurity training"
         url="https://safeskillz.co.uk/work"
       />
-      <section className="py-16 bg-gray-50 dark:bg-dark-surface">
-        <Container>
-          <SectionHeading
-            title={work.title}
-            description={work.description}
-            centered
-          />
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/gisec-global/1746566582497.jpg)',
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-bl from-accent/95 via-primary/90 to-primary-dark/95"></div>
+        <Container className="relative z-10">
+          <div className="text-center text-white max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-fade-in">
+              Showcase
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
+              {work.title}
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 mb-12 animate-slide-up">
+              {work.description}
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-white/20">
+              <div className="text-center">
+                <div className="text-3xl font-bold mb-2">12+</div>
+                <div className="text-sm text-gray-200">Events</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold mb-2">Global</div>
+                <div className="text-sm text-gray-200">Presence</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold mb-2">Expert</div>
+                <div className="text-sm text-gray-200">Sessions</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold mb-2">Impact</div>
+                <div className="text-sm text-gray-200">Driven</div>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
 

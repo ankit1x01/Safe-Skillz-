@@ -1,26 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --color-primary: #1777C8;
-  --color-primary-dark: #0A3D62;
-  --color-accent: #00AEEF;
-  --color-bg: #FFFFFF;
-  --color-surface: #F5F7FB;
-  --color-text: #0F172A;
-  --color-muted: #6B7280;
-  --color-success: #16A34A;
-  --color-warning: #F59E0B;
-  --color-danger: #DC2626;
+  --color-primary: #88B4E6;
+  --color-primary-dark: #6B9FD6;
+  --color-accent: #A8D5F2;
+  --color-bg: #FAFBFD;
+  --color-surface: #F0F4F9;
+  --color-text: #2D3748;
+  --color-muted: #718096;
+  --color-success: #81D4A6;
+  --color-warning: #F6C896;
+  --color-danger: #EFA6A6;
 }
 
 .dark {
-  --color-bg: #0B1320;
-  --color-surface: #111827;
-  --color-text: #E5E7EB;
-  --color-muted: #9CA3AF;
+  --color-bg: #1A202E;
+  --color-surface: #2D3748;
+  --color-text: #F7FAFC;
+  --color-muted: #CBD5E0;
+  --color-primary: #9BC5ED;
+  --color-primary-dark: #7BADD9;
+  --color-accent: #B8DFF5;
 }
 
 @layer base {
@@ -32,11 +35,26 @@
     @apply bg-background text-text transition-colors duration-300;
     background-color: var(--color-bg);
     color: var(--color-text);
+    font-family: 'Poppins', system-ui, sans-serif;
   }
 
   .dark body {
     background-color: var(--color-bg);
     color: var(--color-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-weight: 800;
+  }
+
+  p {
+    font-family: 'Inter', system-ui, sans-serif;
   }
 }
 
@@ -74,11 +92,11 @@
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, #1777C8 0%, #00AEEF 100%);
+    background: linear-gradient(135deg, #88B4E6 0%, #A8D5F2 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #1777C8 0%, #00AEEF 100%);
+    background: linear-gradient(135deg, #88B4E6 0%, #A8D5F2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -88,5 +106,17 @@
 @layer utilities {
   .focus-visible {
     @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-dark-background;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
   }
 }

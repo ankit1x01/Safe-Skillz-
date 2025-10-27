@@ -16,13 +16,44 @@ export const Alliances = () => {
         keywords="cybersecurity partnerships, global alliances, training partners, international cybersecurity education"
         url="https://safeskillz.co.uk/alliances"
       />
-      <section className="py-16 bg-gray-50 dark:bg-dark-surface">
-        <Container>
-          <SectionHeading
-            title="Strategic Alliances"
-            description="Partnering with leading organizations to deliver world-class cybersecurity training"
-            centered
-          />
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/infosecurity-europe/1719051294651.jpg)',
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary-dark/90 to-primary/95"></div>
+        <Container className="relative z-10">
+          <div className="text-center text-white max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-fade-in">
+              Global Network
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
+              Strategic Alliances
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-slide-up">
+              Partnering with leading organizations to deliver world-class cybersecurity training
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">4</div>
+                <div className="text-sm text-gray-200">Strategic Partners</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">25+</div>
+                <div className="text-sm text-gray-200">Countries</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">1000+</div>
+                <div className="text-sm text-gray-200">Professionals</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">100%</div>
+                <div className="text-sm text-gray-200">Commitment</div>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
 

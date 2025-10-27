@@ -16,13 +16,40 @@ export const Team = () => {
         keywords="cybersecurity experts, training team, security professionals, industry advisors"
         url="https://safeskillz.co.uk/team"
       />
-      <section className="py-16 bg-gray-50 dark:bg-dark-surface">
-        <Container>
-          <SectionHeading
-            title="Our Expert Team"
-            description="Meet the cybersecurity professionals behind SafeSkillz training excellence"
-            centered
-          />
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/british-high-commission/1708053095091.jpg)',
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary-dark/95 via-primary/90 to-accent/95"></div>
+        <Container className="relative z-10">
+          <div className="text-center text-white max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-fade-in">
+              Leadership
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
+              Our Expert Team
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 mb-12 animate-slide-up">
+              Meet the cybersecurity professionals behind SafeSkillz training excellence
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-white/20">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">25+</div>
+                <div className="text-sm text-gray-200">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">15+</div>
+                <div className="text-sm text-gray-200">Certifications</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">100+</div>
+                <div className="text-sm text-gray-200">Sessions Delivered</div>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
 

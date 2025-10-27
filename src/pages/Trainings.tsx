@@ -34,13 +34,40 @@ export const Trainings = () => {
         keywords="cybersecurity courses, ethical hacking training, security operations, incident response training, penetration testing course"
         url="https://safeskillz.co.uk/trainings"
       />
-      <section className="py-16 bg-gray-50 dark:bg-dark-surface">
-        <Container>
-          <SectionHeading
-            title="Cybersecurity Training Programs"
-            description="Comprehensive training portfolio covering all aspects of cybersecurity"
-            centered
-          />
+      <section className="relative py-24 lg:py-32 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url(/armiet-college-aicte/1732100762340.jpg)',
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-accent/95"></div>
+        <Container className="relative z-10">
+          <div className="text-center text-white max-w-4xl mx-auto">
+            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+              Professional Development
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Cybersecurity Training Programs
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+              Comprehensive training portfolio covering all aspects of cybersecurity
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center text-sm">
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <span>✓</span>
+                <span>NCSC Aligned</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <span>✓</span>
+                <span>Hands-On Training</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+                <span>✓</span>
+                <span>Expert Instructors</span>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
 
