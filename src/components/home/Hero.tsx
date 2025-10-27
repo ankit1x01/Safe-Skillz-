@@ -43,7 +43,7 @@ export const Hero = () => {
           {/* Badge */}
           <div className="inline-block mb-6 animate-fade-in">
             <div className="px-6 py-3 bg-white/95 backdrop-blur-md rounded-full border border-white shadow-xl">
-              <span className="text-sm font-bold tracking-wide text-primary-dark">🛡️ NCSC Aligned Training Provider</span>
+              <span className="text-sm font-bold tracking-wide text-primary-dark"> NCSC Aligned Training Provider</span>
             </div>
           </div>
 

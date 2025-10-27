@@ -14,7 +14,10 @@ export default {
         background: '#FAFBFD',
         surface: '#F0F4F9',
         text: '#2D3748',
-        muted: '#718096',
+        muted: {
+          DEFAULT: '#718096',
+          dark: '#E2E8F0',
+        },
         success: '#81D4A6',
         warning: '#F6C896',
         danger: '#EFA6A6',

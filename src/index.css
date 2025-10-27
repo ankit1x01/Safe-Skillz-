@@ -20,7 +20,7 @@
   --color-bg: #1A202E;
   --color-surface: #2D3748;
   --color-text: #F7FAFC;
-  --color-muted: #CBD5E0;
+  --color-muted: #E2E8F0;
   --color-primary: #9BC5ED;
   --color-primary-dark: #7BADD9;
   --color-accent: #B8DFF5;
@@ -55,6 +55,19 @@
 
   p {
     font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Dark mode text improvements */
+  .dark .text-muted {
+    color: #E2E8F0 !important;
+  }
+
+  .dark .text-gray-600 {
+    color: #CBD5E0 !important;
+  }
+
+  .dark .text-gray-700 {
+    color: #E2E8F0 !important;
   }
 }
 
