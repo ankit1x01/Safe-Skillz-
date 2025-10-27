@@ -8,8 +8,14 @@ export const Hero = () => {
   const { hero, trustBadges, stats } = siteContent
 
   return (
-    <section className="relative py-20 lg:py-32 gradient-bg overflow-hidden">
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section className="relative py-20 lg:py-32 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url(/gisec-global/1746733553586.jpg)',
+        }}
+      ></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/95"></div>
       <Container className="relative z-10">
         <div className="text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">

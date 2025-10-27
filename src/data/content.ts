@@ -9,7 +9,7 @@ export const siteContent = {
     name: 'SafeSkillz Limited',
     registrationNumber: '', // Add company registration number when available
     jurisdiction: 'England and Wales',
-    registeredOffice: 'London, United Kingdom',
+    registeredOffice: '71-75, Shelton Street, Covent Garden, London, WC2H 9JQ',
     vatNumber: '', // Add VAT number if applicable
   },
 
@@ -193,34 +193,64 @@ export const siteContent = {
     description: 'Delivering hands-on cybersecurity training through workshops, conferences, and practical sessions.',
     gallery: [
       {
-        title: 'Corporate Security Workshop',
-        description: 'Hands-on incident response training for Fortune 500 company',
-        image: 'workshop-1.jpg',
+        title: 'British High Commission in India',
+        description: 'Cybersecurity collaboration and training session at British High Commission',
+        image: 'british-high-commission/1708053095091.jpg',
       },
       {
-        title: 'University Cybersecurity Conference',
-        description: 'Keynote presentation on emerging threats and defense strategies',
-        image: 'conference-1.jpg',
+        title: 'GISEC GLOBAL Conference',
+        description: 'International cybersecurity conference showcasing latest security innovations',
+        image: 'gisec-global/1746566582497.jpg',
       },
       {
-        title: 'Government Training Session',
-        description: 'Specialized training for public sector cybersecurity teams',
-        image: 'training-1.jpg',
+        title: 'Infosecurity Europe Excel London',
+        description: 'Leading European information security event featuring expert presentations',
+        image: 'infosecurity-europe/1719051294651.jpg',
       },
       {
-        title: 'Industry Certification Program',
-        description: 'NCSC-aligned certification training for industry professionals',
-        image: 'certification-1.jpg',
+        title: 'CTF Event with Imperative Business Ventures',
+        description: 'Capture The Flag cybersecurity competition and skills challenge',
+        image: 'ctf-event/1746345968636.jpg',
       },
       {
-        title: 'Penetration Testing Workshop',
-        description: 'Practical ethical hacking training for security professionals',
-        image: 'pentest-1.jpg',
+        title: 'Power Sector Cybersecurity - CEA',
+        description: 'Demonstrating Hacking Threats to the Power Sector at Central Electricity Authority event',
+        image: 'power-sector-cea/1711095109428.jpg',
       },
       {
-        title: 'Cloud Security Bootcamp',
-        description: 'Intensive hands-on training for cloud security best practices',
-        image: 'cloud-1.jpg',
+        title: 'Digital Forensics at ARMIET College',
+        description: 'AICTE organized session on Digital Forensics Investigation techniques',
+        image: 'armiet-college-aicte/1732100762340.jpg',
+      },
+      {
+        title: 'Workshop at GALGOTIAS POLYTECHNIC',
+        description: 'Technical training session with MKITOS at Galgotias Polytechnic',
+        image: 'galgotias-polytechnic/1750774418400.jpg',
+      },
+      {
+        title: 'MOU with DY Patil Institute',
+        description: 'Partnership agreement and internship training program launch at DY Patil Ramrao Adik Institute',
+        image: 'dy-patil-mou/1752987705486.jpg',
+      },
+      {
+        title: 'AI in Society - Shardashram Vidyamandir',
+        description: 'Session on Good and Bad effects of Artificial Intelligence in society',
+        image: 'CSI Represented/ai-society-shardashram/1729693199334.jpg',
+      },
+      {
+        title: 'Digital Forensics - MP Cloud & Cyber Security Summit',
+        description: 'Demonstration on Digital Forensics at National Cloud & Cyber Security Summit hosted by MPSeDC',
+        image: 'CSI Represented/mpsec-digital-forensics/1700657675241.jpg',
+      },
+      {
+        title: 'Infosecurity Europe Showcase',
+        description: 'Expert presentations and security technology demonstrations at Excel London',
+        image: 'infosecurity-europe/1719081149385.jpg',
+      },
+      {
+        title: 'GISEC GLOBAL Exhibition',
+        description: 'Interactive security demonstrations and networking at GISEC',
+        image: 'gisec-global/1746566583843.jpg',
       },
     ],
   },
@@ -248,8 +278,8 @@ export const siteContent = {
   ],
 
   contact: {
-    address: 'London, UK',
-    phone: '+44 (0)7946630285',
+    address: '71-75, Shelton Street, Covent Garden, London, WC2H 9JQ',
+    phone: '16784302',
     email: 'info@safeskillz.co.uk',
     socialLinks: [
       { platform: 'LinkedIn', url: '#', icon: 'Linkedin' },

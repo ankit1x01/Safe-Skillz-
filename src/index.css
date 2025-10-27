@@ -20,6 +20,7 @@
   --color-bg: #0B1320;
   --color-surface: #111827;
   --color-text: #E5E7EB;
+  --color-muted: #9CA3AF;
 }
 
 @layer base {

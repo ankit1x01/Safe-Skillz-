@@ -76,11 +76,11 @@ export const Contact = () => {
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-accent/10 rounded-xl">
+              <div className="mt-8 p-6 bg-blue-50 dark:bg-primary/20 border-2 border-primary rounded-xl">
                 <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                   Training Inquiry
                 </h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                <p className="text-gray-800 dark:text-gray-200 text-sm leading-relaxed">
                   Looking to book a training session or need a custom program for your organization?
                   Use the contact form to tell us about your specific requirements, and we'll get back
                   to you with a tailored proposal.

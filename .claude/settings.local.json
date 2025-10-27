@@ -6,7 +6,8 @@
       "Bash(npx:*)",
       "Bash(./node_modules/.bin/tsc:*)",
       "Bash(npm run build:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

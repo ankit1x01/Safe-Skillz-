@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Courses', href: '/trainings' },
   { label: 'Partners', href: '/alliances' },
-  { label: 'Case Studies', href: '/work' },
+  { label: 'Gallery', href: '/work' },
   { label: 'About Us', href: '/team' },
   { label: 'Contact', href: '/contact' },
 ]
