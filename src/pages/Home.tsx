@@ -1,12 +1,11 @@
+import { Award, Shield, Target, TrendingUp, Users } from 'lucide-react'
+import { CourseCard } from '../components/cards/CourseCard'
+import { CTAStrip } from '../components/home/CTAStrip'
 import { Hero } from '../components/home/Hero'
+import { SEO } from '../components/seo/SEO'
 import { Container } from '../components/ui/Container'
 import { SectionHeading } from '../components/ui/SectionHeading'
-import { CTAStrip } from '../components/home/CTAStrip'
-import { CourseCard } from '../components/cards/CourseCard'
-import { SEO } from '../components/seo/SEO'
 import { siteContent } from '../data/content'
-import { Shield, Target, Cloud, Award, Users, TrendingUp } from 'lucide-react'
-import { InteractiveCyberGame } from '../components/home/InteractiveCyberGame'
 
 export const Home = () => {
   const highlights = siteContent.highlights.map(highlight => ({
@@ -24,8 +23,8 @@ export const Home = () => {
     <div>
       <SEO
         title="SafeSkillz Limited - Cybersecurity Training & Education"
-        description="UK-based cybersecurity training provider specialising in defensive and offensive security education. NCSC-aligned courses for government, corporate and academic clients."
-        keywords="cybersecurity training, ethical hacking, security operations, incident response, penetration testing, NCSC aligned, SafeSkillz"
+        description="UK-based cybersecurity training provider specialising in defensive and offensive security education. Informed by UK cybersecurity guidance, serving government, corporate and academic clients."
+        keywords="cybersecurity training, ethical hacking, security operations, incident response, penetration testing, UK cybersecurity, SafeSkillz"
         url="https://safeskillz.co.uk/"
       />
       <Hero />
@@ -53,8 +52,8 @@ export const Home = () => {
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { icon: Shield, text: 'NCSC Aligned' },
-              { icon: Award, text: 'Industry Accredited' },
+              { icon: Shield, text: 'UK Aligned' },
+              { icon: Award, text: 'Industry Best Practice' },
               { icon: Users, text: 'Expert-Led Training' },
               { icon: TrendingUp, text: 'Proven Results' },
             ].map((item, index) => (
@@ -156,10 +155,10 @@ export const Home = () => {
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-                      NCSC Aligned Training
+                      Training informed by UK cybersecurity guidance
                     </h3>
                     <p className="text-muted leading-relaxed">
-                      All our courses are designed and delivered in alignment with the UK's National Cyber Security Centre guidelines, ensuring you receive training that meets the highest standards.
+                      Our courses are designed using recognised industry best practices and publicly available guidance from organisations such as the UK National Cyber Security Centre (NCSC), ensuring practical, relevant, and up-to-date learning.
                     </p>
                   </div>
                 </div>
