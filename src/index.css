@@ -4,9 +4,9 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #88B4E6;
-  --color-primary-dark: #6B9FD6;
-  --color-accent: #A8D5F2;
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #3b82f6;
   --color-bg: #FAFBFD;
   --color-surface: #F0F4F9;
   --color-text: #2D3748;
@@ -21,9 +21,9 @@
   --color-surface: #2D3748;
   --color-text: #F7FAFC;
   --color-muted: #E2E8F0;
-  --color-primary: #9BC5ED;
-  --color-primary-dark: #7BADD9;
-  --color-accent: #B8DFF5;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-accent: #60a5fa;
 }
 
 @layer base {
@@ -105,11 +105,11 @@
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, #88B4E6 0%, #A8D5F2 100%);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #88B4E6 0%, #A8D5F2 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

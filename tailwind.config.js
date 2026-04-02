@@ -6,11 +6,11 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#88B4E6',
-          dark: '#6B9FD6',
-          light: '#A8D5F2',
+          DEFAULT: '#2563eb', // blue-600
+          dark: '#1d4ed8',    // blue-700
+          light: '#60a5fa',   // blue-400
         },
-        accent: '#A8D5F2',
+        accent: '#3b82f6',    // blue-500
         background: '#FAFBFD',
         surface: '#F0F4F9',
         text: '#2D3748',
@@ -27,8 +27,8 @@ export default {
           text: '#F7FAFC',
         },
         pastel: {
-          blue: '#88B4E6',
-          sky: '#A8D5F2',
+          blue: '#2563eb',
+          sky: '#3b82f6',
           lavender: '#C5B4E3',
           mint: '#B8E6D5',
           peach: '#F6C896',

@@ -169,22 +169,22 @@ export const siteContent = {
     {
       name: 'Cyber Secured India (CSI)',
       description: 'Collaborative initiative to enhance cybersecurity capabilities and training programs in the Indian subcontinent.',
-      logo: 'csi-logo.png',
+      logo: 'partner/cybersecuredindia_logo.jpg',
     },
     {
       name: 'Cyber Secured Africa (CSA)',
       description: 'Strategic partnership focused on advancing cybersecurity education and awareness across African nations.',
-      logo: 'csa-logo.png',
+      logo: 'partner/cybersecuredindia_africajpg.jpg',
     },
     {
       name: 'OPSWAT Academy',
       description: 'Authorized training partner delivering cutting-edge cybersecurity solutions and critical infrastructure protection.',
-      logo: 'opswat-logo.png',
+      logo: 'partner/1654773205477.jpg',
     },
     {
       name: 'CloudSeals',
       description: 'Partnership in cloud security excellence, providing specialized training in cloud-native security practices.',
-      logo: 'cloudseals-logo.png',
+      logo: 'partner/cloudseals.svg',
     },
   ],
 
@@ -270,10 +270,10 @@ export const siteContent = {
       image: 'hemant-patkar.jpg',
     },
     {
-      name: 'Nikhil Rane',
+      name: 'Prathmesh Rane',
       role: 'Advisor',
       linkedinUrl: '#',
-      image: 'nikhil-rane.jpg',
+      image: 'prathmesh-rane.jpg',
     },
     {
       name: 'Nikhil M',
