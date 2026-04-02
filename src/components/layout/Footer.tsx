@@ -26,10 +26,12 @@ export const Footer = () => {
                 <span className="text-xl font-bold text-accent">SafeSkillz</span>
               </div>
               <p className="text-gray-400 mb-4">{siteContent.brand.description}</p>
-              <div className="flex items-center space-x-2 text-sm text-accent">
-                <Shield size={16} />
-                <span>{footer.badge}</span>
-              </div>
+              {footer.badge && (
+                <div className="flex items-center space-x-2 text-sm text-accent">
+                  <Shield size={16} />
+                  <span>{footer.badge}</span>
+                </div>
+              )}
             </div>
 
             {/* Quick Links */}

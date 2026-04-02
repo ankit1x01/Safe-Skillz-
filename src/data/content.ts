@@ -7,7 +7,7 @@ export const siteContent = {
 
   company: {
     name: 'SafeSkillz Limited',
-    registrationNumber: '', // Add company registration number when available
+    registrationNumber: '16967710', // Add company registration number when available
     jurisdiction: 'England and Wales',
     registeredOffice: '71-75, Shelton Street, Covent Garden, London, WC2H 9JQ',
     vatNumber: '', // Add VAT number if applicable
@@ -193,64 +193,64 @@ export const siteContent = {
     description: 'Delivering hands-on cybersecurity training through workshops, conferences, and practical sessions.',
     gallery: [
       {
-        title: 'British High Commission in India',
-        description: 'Cybersecurity collaboration and training session at British High Commission',
-        image: 'british-high-commission/1708053095091.jpg',
+        title: 'Cybersecurity Event in UK',
+        description: 'Hands-on cybersecurity training session',
+        image: 'uk photos/1766836026547.jpg',
       },
       {
-        title: 'GISEC GLOBAL Conference',
-        description: 'International cybersecurity conference showcasing latest security innovations',
-        image: 'gisec-global/1746566582497.jpg',
+        title: 'Professional Training Europe',
+        description: 'Expert-led cybersecurity workshop',
+        image: 'uk photos/1770725993218.jpg',
       },
       {
-        title: 'Infosecurity Europe Excel London',
-        description: 'Leading European information security event featuring expert presentations',
-        image: 'infosecurity-europe/1719051294651.jpg',
+        title: 'Corporate Session UK',
+        description: 'Advanced threat detection training overview',
+        image: 'uk photos/1772468080027.jpg',
       },
       {
-        title: 'CTF Event with Imperative Business Ventures',
-        description: 'Capture The Flag cybersecurity competition and skills challenge',
-        image: 'ctf-event/1746345968636.jpg',
+        title: 'Information Security Workshop',
+        description: 'Practical exercises on network defence',
+        image: 'uk photos/1772468080712.jpg',
       },
       {
-        title: 'Power Sector Cybersecurity - CEA',
-        description: 'Demonstrating Hacking Threats to the Power Sector at Central Electricity Authority event',
-        image: 'power-sector-cea/1711095109428.jpg',
+        title: 'Executive Briefing',
+        description: 'Strategic cybersecurity alignment for businesses',
+        image: 'uk photos/1772468084109.jpg',
       },
       {
-        title: 'Digital Forensics at ARMIET College',
-        description: 'AICTE organized session on Digital Forensics Investigation techniques',
-        image: 'armiet-college-aicte/1732100762340.jpg',
+        title: 'Security Operations Training',
+        description: 'Real-world simulation and incident response',
+        image: 'uk photos/1772468086577.jpg',
       },
       {
-        title: 'Workshop at GALGOTIAS POLYTECHNIC',
-        description: 'Technical training session with MKITOS at Galgotias Polytechnic',
-        image: 'galgotias-polytechnic/1750774418400.jpg',
+        title: 'Interactive Cybersecurity Session',
+        description: 'Engagement and learning with industry experts',
+        image: 'uk photos/1772982472641.jpg',
       },
       {
-        title: 'MOU with DY Patil Institute',
-        description: 'Partnership agreement and internship training program launch at DY Patil Ramrao Adik Institute',
-        image: 'dy-patil-mou/1752987705486.jpg',
+        title: 'Defensive Security Training',
+        description: 'In-depth focus on cloud security architecture',
+        image: 'uk photos/WhatsApp Image 2026-03-22 at 8.57.02 PM (1).jpeg',
       },
       {
-        title: 'AI in Society - Shardashram Vidyamandir',
-        description: 'Session on Good and Bad effects of Artificial Intelligence in society',
-        image: 'CSI Represented/ai-society-shardashram/1729693199334.jpg',
+        title: 'Cyber Awareness Program',
+        description: 'Promoting best practices across the organisation',
+        image: 'uk photos/WhatsApp Image 2026-03-22 at 8.57.02 PM.jpeg',
       },
       {
-        title: 'Digital Forensics - MP Cloud & Cyber Security Summit',
-        description: 'Demonstration on Digital Forensics at National Cloud & Cyber Security Summit hosted by MPSeDC',
-        image: 'CSI Represented/mpsec-digital-forensics/1700657675241.jpg',
+        title: 'Leadership in Cyber Resilience',
+        description: 'Empowering teams for better data protection',
+        image: 'uk photos/WhatsApp Image 2026-03-22 at 8.58.34 PM (1).jpeg',
       },
       {
-        title: 'Infosecurity Europe Showcase',
-        description: 'Expert presentations and security technology demonstrations at Excel London',
-        image: 'infosecurity-europe/1719081149385.jpg',
+        title: 'Hands-on Pentesting Course',
+        description: 'Practical ethical hacking techniques context',
+        image: 'uk photos/WhatsApp Image 2026-03-22 at 8.58.34 PM.jpeg',
       },
       {
-        title: 'GISEC GLOBAL Exhibition',
-        description: 'Interactive security demonstrations and networking at GISEC',
-        image: 'gisec-global/1746566583843.jpg',
+        title: 'Security Compliance Event',
+        description: 'Navigating regulations and industry standards',
+        image: 'uk photos/WhatsApp Image 2026-03-22 at 8.59.41 PM.jpeg',
       },
     ],
   },
@@ -265,7 +265,6 @@ export const siteContent = {
     {
       name: 'Hemant Patkar',
       role: 'Advisor',
-      location: 'UK',
       bio: 'Banking sector strategist with extensive experience in financial services cybersecurity. Provides strategic guidance on regulatory compliance and risk management in the banking industry.',
       image: 'hemant-patkar.jpg',
     },
@@ -291,7 +290,6 @@ export const siteContent = {
   footer: {
     copyright: '© 2025 SafeSkillz Limited. All rights reserved.',
     subtitle: 'Content and training accredited in line with UK cybersecurity standards.',
-    badge: 'Aligned with NCSC guidelines',
     links: [
       { label: 'Privacy Policy', href: '/privacy-policy' },
       { label: 'Cookie Policy', href: '/cookie-policy' },
