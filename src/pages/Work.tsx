@@ -1,8 +1,7 @@
-import { Container } from '../components/ui/Container'
-import { SectionHeading } from '../components/ui/SectionHeading'
 import { Gallery } from '../components/common/Gallery'
 import { CTAStrip } from '../components/home/CTAStrip'
 import { SEO } from '../components/seo/SEO'
+import { Container } from '../components/ui/Container'
 import { siteContent } from '../data/content'
 
 export const Work = () => {
@@ -67,7 +66,7 @@ export const Work = () => {
                 Delivering Excellence Across Sectors
               </h3>
               <p className="text-lg text-muted mb-8">
-                From Fortune 500 companies to government agencies and leading universities, SafeSkillz has delivered impactful cybersecurity training across diverse sectors. Our experienced team brings real-world insights and practical expertise to every engagement.
+                From Fortune 500 companies to government agencies and leading universities, SafeSkillz parent company CSI has delivered impactful cybersecurity training across diverse sectors. Our experienced team brings real-world insights and practical expertise to every engagement.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>

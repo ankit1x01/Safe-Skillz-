@@ -11,8 +11,8 @@ interface SEOProps {
 
 export const SEO = ({
   title = 'SafeSkillz Limited - Cybersecurity Training & Education',
-  description = 'UK-based cybersecurity training provider specialising in defensive and offensive security education for government, corporate and academic clients. NCSC-aligned courses.',
-  keywords = 'cybersecurity training, ethical hacking, security operations, incident response, penetration testing, NCSC aligned, SafeSkillz',
+  description = 'UK-based cybersecurity training provider specialising in defensive and offensive security education for government, corporate and academic clients. Informed by UK cybersecurity guidance.',
+  keywords = 'cybersecurity training, ethical hacking, security operations, incident response, penetration testing, UK cybersecurity, SafeSkillz',
   image = '/og-image.jpg',
   url = 'https://safeskillz.co.uk',
   type = 'website',

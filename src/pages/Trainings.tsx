@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import { Container } from '../components/ui/Container'
-import { SectionHeading } from '../components/ui/SectionHeading'
 import { CourseCard } from '../components/cards/CourseCard'
 import { CTAStrip } from '../components/home/CTAStrip'
 import { SEO } from '../components/seo/SEO'
+import { Container } from '../components/ui/Container'
 import { siteContent } from '../data/content'
 
 export const Trainings = () => {
@@ -19,7 +18,7 @@ export const Trainings = () => {
     { id: 'governance', label: 'Governance & Risk' },
     { id: 'cyber-hygiene', label: 'Cyber Hygiene' },
     { id: 'forensics', label: 'Digital Forensics' },
-    { id: 'accredited', label: 'Accredited Courses' },
+    { id: 'accredited', label: 'Certification-Focused' },
   ]
 
   const filteredSections = selectedCategory === 'all'
@@ -30,7 +29,7 @@ export const Trainings = () => {
     <div>
       <SEO
         title="Cybersecurity Training Programs | SafeSkillz Limited"
-        description="Comprehensive cybersecurity training covering defensive security, ethical hacking, cloud security, and more. NCSC-aligned courses for professionals."
+        description="Comprehensive cybersecurity training covering defensive security, ethical hacking, cloud security, and more. Industry best practice courses for professionals."
         keywords="cybersecurity courses, ethical hacking training, security operations, incident response training, penetration testing course"
         url="https://safeskillz.co.uk/trainings"
       />
@@ -56,7 +55,7 @@ export const Trainings = () => {
             <div className="flex flex-wrap gap-4 justify-center text-sm">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span>✓</span>
-                <span>NCSC Aligned</span>
+                <span>UK Aligned</span>
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
                 <span>✓</span>
@@ -84,11 +83,10 @@ export const Trainings = () => {
                     <button
                       key={category.id}
                       onClick={() => setSelectedCategory(category.id)}
-                      className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors focus-visible ${
-                        selectedCategory === category.id
+                      className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors focus-visible ${selectedCategory === category.id
                           ? 'bg-primary text-white'
                           : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
-                      }`}
+                        }`}
                     >
                       {category.label}
                     </button>
