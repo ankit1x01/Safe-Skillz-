@@ -55,15 +55,14 @@ export const Team = () => {
 
       <section className="section-padding">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             {team.map((member, index) => (
               <TeamCard
                 key={index}
                 name={member.name}
                 role={member.role}
-                bio={member.bio}
                 image={member.image}
-                location={member.location}
+                linkedinUrl={member.linkedinUrl || '#'}
               />
             ))}
           </div>
