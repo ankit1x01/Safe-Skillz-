@@ -15,9 +15,9 @@ export const Footer = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img
-                  src="/logo.png"
+                  src="/logo.jpeg"
                   alt="SafeSkillz Limited"
-                  className="h-8 w-auto"
+                  className="h-16 w-auto"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement
                     target.style.display = 'none'

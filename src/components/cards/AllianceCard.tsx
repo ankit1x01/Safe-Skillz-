@@ -5,12 +5,11 @@ interface AllianceCardProps {
 }
 
 const partnerColors: Record<string, { bg: string; text: string }> = {
-  'csi-logo.png': { bg: '#1e3a5f', text: '#ffffff' },
-  'csa-logo.png': { bg: '#14532d', text: '#ffffff' },
-  'opswat-logo.png': { bg: '#1d4ed8', text: '#ffffff' },
-  'cloudseals-logo.png': { bg: '#4f46e5', text: '#ffffff' },
+  'partner/cybersecuredindia_logo.jpg': { bg: '#1e3a5f', text: '#ffffff' },
+  'partner/cybersecuredindia_africajpg.jpg': { bg: '#14532d', text: '#ffffff' },
+  'partner/1654773205477.jpg': { bg: '#1d4ed8', text: '#ffffff' },
+  'partner/cloudseals.svg': { bg: '#4f46e5', text: '#ffffff' },
 }
-
 export const AllianceCard = ({ name, description, logo }: AllianceCardProps) => {
   const colors = partnerColors[logo] || { bg: '#1e3a8a', text: '#ffffff' }
   const initials = name
