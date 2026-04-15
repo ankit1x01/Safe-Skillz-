@@ -61,32 +61,67 @@ export const Contact = () => {
                 Contact Information
               </h3>
 
+              <div className="mt-8 rounded-xl overflow-hidden h-64">
+                <iframe
+                  src="https://www.google.com/maps?q=71-75+Shelton+Street+Covent+Garden+London+WC2H+9JQ&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+              
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Address</h4>
-                    <p className="text-muted">{contact.address}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h4>
-                    <a
-                      href={`mailto:${contact.email}`}
-                      className="text-muted hover:text-primary transition-colors focus-visible"
-                    >
-                      {contact.email}
-                    </a>
-                  </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Address</h4>
+                  <a
+                    href="https://www.google.com/maps?q=71-75+Shelton+Street+Covent+Garden+London+WC2H+9JQ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted hover:text-primary transition-colors"
+                  >
+                    {contact.address}
+                  </a>
                 </div>
               </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Email</h4>
+                  <a
+                    href={`mailto:${contact.email}`}
+                    className="text-muted hover:text-primary transition-colors"
+                  >
+                    {contact.email}
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                <Phone className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Phone</h4>
+                <a
+                  href={`tel:${contact.phone}`}
+                  className="text-muted hover:text-primary transition-colors"
+                >
+                  {contact.phone}
+                </a>
+              </div>
+            </div>
 
               <div className="mt-8 p-6 bg-blue-50 dark:bg-primary/20 border-2 border-primary rounded-xl">
                 <h4 className="font-semibold text-gray-900 dark:text-white mb-2">

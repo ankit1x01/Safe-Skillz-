@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Linkedin, Twitter, Youtube, Shield } from 'lucide-react'
+import { Linkedin, Twitter, Youtube, Shield, Instagram } from 'lucide-react'
 import { Container } from '../ui/Container'
 import { siteContent } from '../../data/content'
 
@@ -92,11 +92,13 @@ export const Footer = () => {
               <div className="flex space-x-4">
                 {contact.socialLinks.map((social) => {
                   const Icon = {
-                    Linkedin,
-                    Twitter,
-                    Youtube,
-                  }[social.icon as keyof typeof import('lucide-react')] || Linkedin
-
+                      Linkedin,
+                      Twitter,
+                      Youtube,
+                      Instagram,
+                    }[social.icon as keyof typeof import('lucide-react')] || Linkedin
+                  
+                
                   return (
                     <a
                       key={social.platform}

@@ -214,6 +214,11 @@ export const siteContent = {
         image: 'uk photos/1772468080712.jpg',
       },
       {
+        title: 'Infosecurity Europe',
+        description: 'Annual security conference in London',
+        image: 'infosecurity-europe/1719081149385.jpg',
+      },
+      {
         title: 'Executive Briefing',
         description: 'Strategic cybersecurity alignment for businesses',
         image: 'uk photos/1772468084109.jpg',
@@ -260,24 +265,28 @@ export const siteContent = {
     {
       name: 'Shinja N',
       role: 'Director',
+      bio: 'Cybersecurity leader with extensive experience in security strategy and operations across global organisations.',
       linkedinUrl: 'https://www.linkedin.com/in/shinja-nagvekar/',
       image: 'shinja-n.jpg',
     },
     {
       name: 'Hemant Patkar',
-      role: 'Advisor',
+      role: 'Non Executive Director',
+      bio: 'Senior cybersecurity advisor with deep expertise in risk management, compliance, and enterprise security frameworks.',
       linkedinUrl: 'https://www.linkedin.com/in/hemantpatkar/',
       image: 'hemant-patkar.jpg',
     },
     {
       name: 'Prathmesh Rane',
       role: 'Advisor',
+      bio: 'Specialised in offensive security and penetration testing with hands-on experience across financial and government sectors.',
       linkedinUrl: 'https://www.linkedin.com/in/raneprathamesh/',
       image: 'prathmesh-rane.jpg',
     },
     {
       name: 'Nikhil M',
-      role: 'Founder',
+      role: 'Director',
+      bio: 'Founder of SafeSkillz with a vision to make world-class cybersecurity education accessible to organisations globally.',
       linkedinUrl: 'https://www.linkedin.com/in/nikhilmahadeshwar/',
       image: 'nikhil-m.jpg',
     },
@@ -285,18 +294,20 @@ export const siteContent = {
 
   contact: {
     address: '71-75, Shelton Street, Covent Garden, London, WC2H 9JQ',
-    phone: '16784302',
+    phone: '+44 7946 630285',
     email: 'info@safeskillz.co.uk',
     socialLinks: [
-      { platform: 'LinkedIn', url: '#', icon: 'Linkedin' },
-      { platform: 'Twitter', url: '#', icon: 'Twitter' },
+      { platform: 'LinkedIn', url: 'https://www.linkedin.com/company/safeskillz-ltd', icon: 'Linkedin' },
+      { platform: 'Twitter', url: 'https://x.com/SafeskillzUk', icon: 'Twitter' },
       { platform: 'YouTube', url: '#', icon: 'Youtube' },
+      { platform: 'Instagram', url: 'https://www.instagram.com/safeskillz1.uk/', icon: 'Instagram' },
     ],
   },
 
   footer: {
-    copyright: '© 2025 SafeSkillz Limited. All rights reserved.',
+    copyright: '© SafeSkillz Limited. All rights reserved.',
     subtitle: 'Content and training accredited in line with UK cybersecurity standards.',
+    badge: 'UK Aligned Cybersecurity Training',
     links: [
       { label: 'Privacy Policy', href: '/privacy-policy' },
       { label: 'Cookie Policy', href: '/cookie-policy' },

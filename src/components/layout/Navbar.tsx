@@ -29,7 +29,7 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img
               src="/logo.jpeg"
-              alt="SafeSkillz Limited"
+              alt="SafeSkillz Limited - Cybersecurity Training"
               className="h-16 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement
