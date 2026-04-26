@@ -3,6 +3,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import { CookieConsent } from './components/common/CookieConsent'
+import { ScrollToTop } from './components/common/ScrollToTop'
 import { Home } from './pages/Home'
 import { Trainings } from './pages/Trainings'
 import { Alliances } from './pages/Alliances'
@@ -18,6 +19,7 @@ function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <div className="min-h-screen bg-background text-text transition-colors">
           <Navbar />
           <main>

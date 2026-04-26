@@ -8,20 +8,7 @@ export const Hero = () => {
   const { hero, trustBadges } = siteContent
 
   return (
-    <section className="relative py-24 lg:py-40 overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center transform scale-105"
-        style={{
-          backgroundImage: 'url(/gisec-global/1746733553586.jpg)',
-        }}
-      ></div>
-
-      {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/95 via-primary/90 to-accent/95"></div>
-
-      {/* Additional Dark Layer for Better Contrast */}
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-gray-900/40"></div>
+    <section className="relative py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-primary-dark via-primary to-accent">
 
       {/* Animated Shapes */}
       <div className="absolute inset-0 overflow-hidden">
@@ -40,10 +27,11 @@ export const Hero = () => {
 
       <Container className="relative z-10">
         <div className="text-center text-white max-w-5xl mx-auto">
+
           {/* Badge */}
           <div className="inline-block mb-6 animate-fade-in">
             <div className="px-6 py-3 bg-white/95 backdrop-blur-md rounded-full border border-white shadow-xl">
-              <span className="text-sm font-bold tracking-wide text-primary-dark"> UK Aligned Training Provider</span>
+              <span className="text-sm font-bold tracking-wide text-primary-dark">UK Aligned Training Provider</span>
             </div>
           </div>
 
@@ -94,15 +82,6 @@ export const Hero = () => {
             ))}
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="mt-16 animate-bounce">
-            <div className="inline-flex flex-col items-center gap-2 text-white drop-shadow-lg">
-              <span className="text-xs font-bold tracking-wider">SCROLL TO EXPLORE</span>
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={3}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </div>
-          </div>
         </div>
       </Container>
     </section>

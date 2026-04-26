@@ -15,8 +15,7 @@ export default {
         surface: '#F0F4F9',
         text: '#2D3748',
         muted: {
-          DEFAULT: '#718096',
-          dark: '#E2E8F0',
+          DEFAULT: 'var(--color-muted)',
         },
         success: '#81D4A6',
         warning: '#F6C896',

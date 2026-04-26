@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Moon, Sun } from 'lucide-react'
-import { useDarkMode } from '../../hooks/useDarkMode'
+import { Menu, X } from 'lucide-react'
 import { Container } from '../ui/Container'
 
 const navLinks = [
@@ -16,27 +15,25 @@ const navLinks = [
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
-  const { isDark, toggleDarkMode } = useDarkMode()
 
   const isActiveLink = (href: string) => {
     return location.pathname === href
   }
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 dark:bg-dark-background/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
       <Container>
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center">
             <img
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="SafeSkillz Limited - Cybersecurity Training"
-              className="h-16 w-auto"
+              className="h-24 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement
                 target.style.display = 'none'
               }}
             />
-            <span className="text-xl font-bold text-primary">SafeSkillz</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -47,7 +44,7 @@ export const Navbar = () => {
                 className={`relative py-2 text-sm font-medium transition-colors hover:text-primary focus-visible ${
                   isActiveLink(link.href)
                     ? 'text-primary'
-                    : 'text-gray-700 dark:text-gray-300'
+                    : 'text-gray-700'
                 }`}
               >
                 {link.label}
@@ -56,19 +53,11 @@ export const Navbar = () => {
                 )}
               </Link>
             ))}
-
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors focus-visible"
-              aria-label="Toggle dark mode"
-            >
-              {isDark ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
           </div>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors focus-visible"
+            className="md:hidden p-2 text-gray-700 hover:text-primary transition-colors focus-visible"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -77,7 +66,7 @@ export const Navbar = () => {
       </Container>
 
       {isMenuOpen && (
-        <div className="md:hidden border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-background">
+        <div className="md:hidden border-t border-gray-200 bg-white">
           <Container>
             <div className="py-4 space-y-4">
               {navLinks.map((link) => (
@@ -88,21 +77,12 @@ export const Navbar = () => {
                   className={`block py-2 text-base font-medium transition-colors hover:text-primary focus-visible ${
                     isActiveLink(link.href)
                       ? 'text-primary'
-                      : 'text-gray-700 dark:text-gray-300'
+                      : 'text-gray-700'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-
-              <button
-                onClick={toggleDarkMode}
-                className="flex items-center space-x-2 py-2 text-gray-700 dark:text-gray-300 hover:text-primary transition-colors focus-visible"
-                aria-label="Toggle dark mode"
-              >
-                {isDark ? <Sun size={20} /> : <Moon size={20} />}
-                <span>Toggle {isDark ? 'Light' : 'Dark'} Mode</span>
-              </button>
             </div>
           </Container>
         </div>

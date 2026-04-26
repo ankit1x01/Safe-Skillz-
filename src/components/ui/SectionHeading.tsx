@@ -26,7 +26,7 @@ export const SectionHeading = ({
         {title}
       </h2>
       {description && (
-        <p className="text-lg text-muted max-w-3xl mx-auto">{description}</p>
+        <p className="text-lg text-muted dark:text-gray-300 max-w-3xl mx-auto">{description}</p>
       )}
       {children}
     </div>

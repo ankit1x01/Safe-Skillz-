@@ -188,126 +188,136 @@ export const siteContent = {
     },
   ],
 
-
   work: {
-    title: 'Our Work in Action',
-    description: 'Delivering hands-on cybersecurity training through workshops, conferences, and practical sessions.',
-    gallery: [
-      {
-        title: 'Cybersecurity Event in UK',
-        description: 'Hands-on cybersecurity training session',
-        image: 'uk photos/1766836026547.jpg',
-      },
-      {
-        title: 'Professional Training Europe',
-        description: 'Expert-led cybersecurity workshop',
-        image: 'uk photos/1770725993218.jpg',
-      },
-      {
-        title: 'Corporate Session UK',
-        description: 'Advanced threat detection training overview',
-        image: 'uk photos/1772468080027.jpg',
-      },
-      {
-        title: 'Information Security Workshop',
-        description: 'Practical exercises on network defence',
-        image: 'uk photos/1772468080712.jpg',
-      },
-      {
-        title: 'Infosecurity Europe',
-        description: 'Annual security conference in London',
-        image: 'infosecurity-europe/1719081149385.jpg',
-      },
-      {
-        title: 'Executive Briefing',
-        description: 'Strategic cybersecurity alignment for businesses',
-        image: 'uk photos/1772468084109.jpg',
-      },
-      {
-        title: 'Security Operations Training',
-        description: 'Real-world simulation and incident response',
-        image: 'uk photos/1772468086577.jpg',
-      },
-      {
-        title: 'Interactive Cybersecurity Session',
-        description: 'Engagement and learning with industry experts',
-        image: 'uk photos/1772982472641.jpg',
-      },
-      {
-        title: 'Defensive Security Training',
-        description: 'In-depth focus on cloud security architecture',
-        image: 'uk photos/whatsapp-1.jpeg',
-      },
-      {
-        title: 'Cyber Awareness Program',
-        description: 'Promoting best practices across the organisation',
-        image: 'uk photos/whatsapp-2.jpeg',
-      },
-      {
-        title: 'Leadership in Cyber Resilience',
-        description: 'Empowering teams for better data protection',
-        image: 'uk photos/whatsapp-3.jpeg',
-      },
-      {
-        title: 'Hands-on Pentesting Course',
-        description: 'Practical ethical hacking techniques context',
-        image: 'uk photos/whatsapp-4.jpeg',
-      },
-      {
-        title: 'Security Compliance Event',
-        description: 'Navigating regulations and industry standards',
-        image: 'uk photos/whatsapp-5.jpeg',
-      },
-    ],
-  },
+  title: 'Our Work in Action',
+  description: 'Delivering hands-on cybersecurity training through workshops, conferences, and practical sessions.',
+  events: [
+    {
+      id: 'uk-events',
+      title: 'BlackHat',
+      tagline: 'BlackHat Europe Global Representation',
+      description: 'Cyber Secured India core team member Shinja Nagvekar represented Cyber Secured India at BlackHat Europe which took place in London in December 2025.Cyber Secured India is a global cyber security community and have more than 38,000 community members across 130 countries.',
+      coverImage: 'uk photos/1766836026547.jpg',
+      images: [
+        
+        'uk photos/blackhat(3).jpg',
+        'uk photos/blackhat(4).jpg',
+        'uk photos/blackhat(5).jpg',
+        'uk photos/blackhat(6).jpg',
+
+
+
+      ],
+    },
+    {
+      id: 'infosecurity-europe',
+      title: 'Virgin Money',
+      tagline: 'Global Cyber Community Momentum',
+      description: ' March marked a series of meaningful engagements across OPSWAT Academy and Cyber Secured India global community. From participating in the recent hashtag#CWG2026 conference lead by Shinja Nagvekar, to celebrating International Women’s Day with CyberWomen@Warwick in collaboration with the Warwick Cyber Security Society, Hemant Patkar, CISSP® connected with professionals at the OMPEG UK Winter Showcase 2026 in London, and most recently meeting the Virgin Money Cyber Security team in Scotland, the momentum has been strong. These initiatives were organized in coordination with SafeSkillz UK and Cyber Secured India, whose commitment continues to drive impact.We were glad to see strong interest in .Benny .Czarny’s new book - Cybersecurity Upside Down, and that it sparked thoughtful discussions among students, young professionals, and industry leaders, reflecting a community actively shaping the future of cybersecurity.',
+      coverImage: 'uk photos/virginmoney(1).jpg',
+      images: [
+        
+        'uk photos/virginmoney(2).jpg',
+        'uk photos/virginmoney(3).jpg',
+        'uk photos/virginmoney(4).jpg',
+
+      ],
+    },
+    {
+      id: 'gisec-global',
+      title: 'London Tech Week',
+      tagline: 'London Tech Week Global Expansion',
+      description: 'Sudden plans can lead to great outcomes, and life surprises can bring exciting opportunities. Cyber Secured India recently had the honor of participating in London Tech Week with the Department for Business and Trade at the British High Commission in India. During this event, our team explored the various initiatives offered by the UK Cyber Ecosystem, establishing valuable connections. We are grateful and express our gratitude towards Sijoy Thomas and Neha Nigadikar for this enriching experience. hashtag#LondonTechWeek hashtag#UKCyberEcosystem.Reflecting on the past year, our companies, Cyber Security and Digital Forensics Limited, and Imperative Business Ventures UK Limited, were launched in London. Collaborating with Dr. Sachin Paithankar and Aman Gujar from Imperative Business Ventures Limited we achieved significant milestones in our entrepreneurial journey. This time Keir Starmer, Prime Minister of the UK and Jensen Huang, CEO of NVIDIA were at the opening state.',
+      coverImage: 'uk photos/techweek(5).jpg',
+      images: [
+        
+        'uk photos/techweek(1).jpg',
+        'uk photos/techweek(2).jpg',
+        'uk photos/techweek(4).jpg',
+        'uk photos/techweek(3).jpg',
+       
+      ],
+    },
+    {
+      id: 'british-high-commission',
+      title: 'Warwick Cyber Secured Society',
+      tagline: 'Empowering Women in Cybersecurity',
+      description: "Shinja Nagvekar, a core team member of Cyber Secured India, celebrated International Women's Day at an event hosted by CyberWomen@Warwick in collaboration with the Warwick Cyber Security Society. Attendees received a copy of the book Cybersecurity Upside Down: Rethink Your Cybersecurity Strategy, authored by .Benny .Czarny, CEO of OPSWAT. Special thanks to OPSWAT Academy for their support.",
+      coverImage: 'uk photos/warwick(1).jpg',
+      images: [
+        
+        'uk photos/warwick(2).jpg',
+        'uk photos/1772468080712.jpg',
+        'uk photos/1772468084109.jpg',
+      ],
+    },
+    {
+      id: 'ctf-competition',
+      title: 'India AI Summit 2026',
+      tagline: 'AI Summit Leadership & Collaboration',
+      description: 'We are delight to share that our CEO Prathamesh Rane was grateful to have attended the India AI Impact Summit 2026 at Bharat Mandapam, New Delhi an incredible experience filled with learning, networking, and meaningful discussions around the future of AI and cybersecurity.During the summit, He had the opportunity to visit several exhibitor stalls including National Payments Corporation Of India (NPCI), Innefu Labs, i2k2 INTRACIS, FIA Global, BHASHINI - (Digital India BHASHINI Division), JAN AI and many more, exploring innovative solutions shaping the AI ecosystem.He also visited the Bharat Pavilion and UK Pavilion, where I had insightful discussions with Sijoy Thomas sir about collaboration opportunities between our UK initiatives - SafeSkillz and CSDFUK.He was also honoured to participate in The Open Source Leaders Roundtable – an AI Impact Summit Fringe Event hosted by OpenUK at IIC. A special thank you to Professor Amanda Brock and Hiren Parekh  karan saini for giving us the opportunity to participate and as a community partner. It was equally inspiring us to meet ACP Vivek Tyagi Bhajanpura, Delhi, where potential collaboration initiatives between Cyber Secured India (CSI) and Delhi Police were discussed.He also had the opportunity to attend the Bharat AI Conclave at IIT Delhi Research & Innovation Park, hosted by Bharat AI and the World AI Governance (WAIG Foundation) Grateful to Dr. Umang Mehta Founder WAIG for the invitation and for facilitating connections with inspiring leaders including Dr. Pavan Duggal. sir Prabhat Kumar Founder - AIforAll Global, and Dr. Gundala Nagaraju - Raju Sir President - WAIG.',
+      coverImage: 'uk photos/summit(6).jpg',
+      images: [
+        'uk photos/summit(1).jpg',
+        'uk photos/summit(2).jpg',
+        'uk photos/summit(3).jpg',
+        'uk photos/summit(4).jpg',
+        'uk photos/summit(5).jpg',
+        'uk photos/summit(7).jpg',
+      ],
+    },
+  ],
+},
 
   team: [
-    {
-      name: 'Shinja N',
-      role: 'Director',
-      bio: 'Cybersecurity leader with extensive experience in security strategy and operations across global organisations.',
-      linkedinUrl: 'https://www.linkedin.com/in/shinja-nagvekar/',
-      image: 'shinja-n.jpg',
-    },
+
     {
       name: 'Hemant Patkar',
       role: 'Non Executive Director',
-      bio: 'Senior cybersecurity advisor with deep expertise in risk management, compliance, and enterprise security frameworks.',
+      bio: 'Cybersecurity Lead Designer / Architect - Banking & Regulated Environments | Zero Trust | Cloud & Identity Security | Risk & Resilience | Speaker | NED',
       linkedinUrl: 'https://www.linkedin.com/in/hemantpatkar/',
       image: 'hemant-patkar.jpg',
     },
-    {
-      name: 'Prathmesh Rane',
-      role: 'Advisor',
-      bio: 'Specialised in offensive security and penetration testing with hands-on experience across financial and government sectors.',
-      linkedinUrl: 'https://www.linkedin.com/in/raneprathamesh/',
-      image: 'prathmesh-rane.jpg',
-    },
+
     {
       name: 'Nikhil M',
       role: 'Director',
-      bio: 'Founder of SafeSkillz with a vision to make world-class cybersecurity education accessible to organisations globally.',
+      bio: 'Renowned cybersecurity expert and technology-based innovator with more than a decade of experience in the industry.',
       linkedinUrl: 'https://www.linkedin.com/in/nikhilmahadeshwar/',
       image: 'nikhil-m.jpg',
+    },    
+        
+    {
+      name: 'Shinja N',
+      role: 'Director',
+      bio: 'Cybersecurity Consultant | Penetration Tester | ISCP | eCPPT | CRTP',
+      linkedinUrl: 'https://www.linkedin.com/in/shinja-nagvekar/',
+      image: 'shinja-n.jpg',
     },
+
+    {
+      name: 'Prathmesh Rane',
+      role: 'Advisor',
+      bio: 'Expert in Global Cybersecurity Training and Digital Forensic Services',
+      linkedinUrl: 'https://www.linkedin.com/in/raneprathamesh/',
+      image: 'prathmesh-rane.jpg',
+    },
+
   ],
 
   contact: {
-    address: '71-75, Shelton Street, Covent Garden, London, WC2H 9JQ',
-    phone: '+44 7946 630285',
-    email: 'info@safeskillz.co.uk',
+      address: "71-75, Shelton Street, Covent Garden, London, WC2H 9JQ",
+      email: "info@safeskillz.co.uk",
     socialLinks: [
       { platform: 'LinkedIn', url: 'https://www.linkedin.com/company/safeskillz-ltd', icon: 'Linkedin' },
       { platform: 'Twitter', url: 'https://x.com/SafeskillzUk', icon: 'Twitter' },
-      { platform: 'YouTube', url: '#', icon: 'Youtube' },
       { platform: 'Instagram', url: 'https://www.instagram.com/safeskillz1.uk/', icon: 'Instagram' },
     ],
   },
-
   footer: {
-    copyright: '© SafeSkillz Limited. All rights reserved.',
-    subtitle: 'Content and training accredited in line with UK cybersecurity standards.',
-    badge: 'UK Aligned Cybersecurity Training',
+  copyright: '© 2026 SafeSkillz Limited. All rights reserved.',
+  subtitle: 'Content and training in line with UK cybersecurity standards.',
+  badge: 'UK Aligned Cybersecurity Training',
     links: [
       { label: 'Privacy Policy', href: '/privacy-policy' },
       { label: 'Cookie Policy', href: '/cookie-policy' },

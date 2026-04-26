@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -57,17 +57,24 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  /* Dark mode text improvements */
-  .dark .text-muted {
-    color: #E2E8F0 !important;
-  }
-
-  .dark .text-gray-600 {
+  .dark .text-gray-500 {
     color: #CBD5E0 !important;
   }
 
-  .dark .text-gray-700 {
+  .dark .text-gray-600 {
     color: #E2E8F0 !important;
+  }
+
+  .dark .text-gray-700 {
+    color: #F0F4F8 !important;
+  }
+
+  .dark .text-gray-800 {
+    color: #F7FAFC !important;
+  }
+
+  .dark .text-gray-900 {
+    color: #FFFFFF !important;
   }
 }
 
@@ -132,4 +139,158 @@
   .rotate-y-180 {
     transform: rotateY(180deg);
   }
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-accent: #3b82f6;
+  --color-bg: #FAFBFD;
+  --color-surface: #F0F4F9;
+  --color-text: #2D3748;
+  --color-muted: #718096;
+  --color-success: #81D4A6;
+  --color-warning: #F6C896;
+  --color-danger: #EFA6A6;
+}
+
+.dark {
+  --color-bg: #1A202E;
+  --color-surface: #2D3748;
+  --color-text: #F7FAFC;
+  --color-muted: #E2E8F0;
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-accent: #60a5fa;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text transition-colors duration-300;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  .dark body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    font-weight: 800;
+  }
+
+  p {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark focus:ring-primary shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary;
+  }
+
+  .btn-ghost {
+    @apply btn text-primary hover:bg-primary/10 focus:ring-primary;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-base;
+  }
+
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white dark:bg-dark-surface rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-surface dark:border-gray-700;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-dark-background;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+}
+
+/* ===== DARK MODE OVERRIDES =====
+   These MUST be outside @layer blocks so they
+   load after Tailwind utilities and actually win */
+.dark .text-muted {
+  color: #E2E8F0 !important;
+}
+
+.dark .text-gray-400 {
+  color: #CBD5E0 !important;
+}
+
+.dark .text-gray-500 {
+  color: #CBD5E0 !important;
+}
+
+.dark .text-gray-600 {
+  color: #E2E8F0 !important;
+}
+
+.dark .text-gray-700 {
+  color: #F0F4F8 !important;
+}
+
+.dark .text-gray-800 {
+  color: #F7FAFC !important;
+}
+
+.dark .text-gray-900 {
+  color: #FFFFFF !important;
 }

@@ -94,7 +94,7 @@ export const InteractiveCyberGame = () => {
         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           Test Your Security Awareness
         </h2>
-        <p className="text-lg text-muted max-w-2xl mx-auto">
+        <p className="text-lg text-muted dark:text-gray-300 max-w-2xl mx-auto">
           Click on the cards to identify potential security threats. Can you spot them all?
         </p>
       </div>
@@ -104,14 +104,14 @@ export const InteractiveCyberGame = () => {
         <div className="flex items-center gap-3 px-6 py-3 bg-white dark:bg-dark-surface rounded-2xl shadow-lg border-2 border-primary/20">
           <Trophy className="w-6 h-6 text-primary" />
           <div>
-            <div className="text-xs text-muted">Score</div>
+            <div className="text-xs text-muted dark:text-gray-300">Score</div>
             <div className="text-2xl font-bold text-primary">{score}/{correctThreats}</div>
           </div>
         </div>
         <div className="flex items-center gap-3 px-6 py-3 bg-white dark:bg-dark-surface rounded-2xl shadow-lg border-2 border-accent/20">
           <Eye className="w-6 h-6 text-accent" />
           <div>
-            <div className="text-xs text-muted">Revealed</div>
+            <div className="text-xs text-muted dark:text-gray-300">Revealed</div>
             <div className="text-2xl font-bold text-accent">{flipped.length}/{threats.length}</div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export const InteractiveCyberGame = () => {
                     <p className="text-sm font-bold text-gray-800 dark:text-white">
                       Click to Reveal
                     </p>
-                    <p className="text-xs text-muted mt-2">Scenario #{card.id}</p>
+                    <p className="text-xs text-muted dark:text-gray-300 mt-2">Scenario #{card.id}</p>
                   </div>
                 </div>
 
@@ -209,7 +209,7 @@ export const InteractiveCyberGame = () => {
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
                 {score === correctThreats ? 'Perfect Score!' : 'Challenge Complete!'}
               </h3>
-              <p className="text-lg text-muted mb-2">
+              <p className="text-lg text-muted dark:text-gray-300 mb-2">
                 You identified <span className="font-bold text-primary">{score}</span> out of{' '}
                 <span className="font-bold text-primary">{correctThreats}</span> threats
               </p>

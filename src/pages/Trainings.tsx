@@ -33,38 +33,21 @@ export const Trainings = () => {
         keywords="cybersecurity courses, ethical hacking training, security operations, incident response training, penetration testing course"
         url="https://safeskillz.co.uk/trainings"
       />
-      <section className="relative py-24 lg:py-32 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url(/armiet-college-aicte/1732100762340.jpg)',
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-accent/95"></div>
+      <section className="relative py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-primary via-primary to-accent">
+
         <Container className="relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
-            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+            <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-fade-in">
               Professional Development
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
               Cybersecurity Training Programs
             </h1>
-            <p className="text-xl md:text-2xl text-gray-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-slide-up">
               Comprehensive training portfolio covering all aspects of cybersecurity
             </p>
             <div className="flex flex-wrap gap-4 justify-center text-sm">
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <span>✓</span>
-                <span>UK Aligned</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <span>✓</span>
-                <span>Hands-On Training</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
-                <span>✓</span>
-                <span>Expert Instructors</span>
-              </div>
+
             </div>
           </div>
         </Container>
