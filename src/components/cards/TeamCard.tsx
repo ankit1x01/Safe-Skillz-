@@ -5,10 +5,9 @@ interface TeamCardProps {
   role: string
   image: string
   linkedinUrl: string
-  bio?: string
 }
 
-export const TeamCard = ({ name, role, image, linkedinUrl, bio }: TeamCardProps) => {
+export const TeamCard = ({ name, role, image, linkedinUrl }: TeamCardProps) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 text-center flex flex-col items-center transition-all hover:shadow-md">
       <div className="w-28 h-28 mb-4 rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-700 shadow-sm">
@@ -31,11 +30,7 @@ export const TeamCard = ({ name, role, image, linkedinUrl, bio }: TeamCardProps)
         <div>
           <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">{name}</h3>
           <p className="text-primary font-medium text-sm mb-3">{role}</p>
-          {bio && (
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">
-              {bio}
-            </p>
-          )}
+          
         </div>
         
         <a

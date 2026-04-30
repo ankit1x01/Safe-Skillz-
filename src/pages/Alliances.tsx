@@ -61,6 +61,7 @@ export const Alliances = () => {
                 name={alliance.name}
                 description={alliance.description}
                 logo={alliance.logo}
+                website={alliance.website}
               />
             ))}
           </div>

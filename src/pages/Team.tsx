@@ -31,7 +31,7 @@ export const Team = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">35+</div>
+                <div className="text-4xl font-bold mb-2">40+</div>
                 <div className="text-sm text-gray-200">Years Experience</div>
               </div>
               <div className="text-center">
@@ -39,7 +39,7 @@ export const Team = () => {
                 <div className="text-sm text-gray-200">Certifications</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">100+</div>
+                <div className="text-4xl font-bold mb-2">1000+</div>
                 <div className="text-sm text-gray-200">Sessions Delivered</div>
               </div>
             </div>
@@ -57,7 +57,6 @@ export const Team = () => {
                 role={member.role}
                 image={member.image}
                 linkedinUrl={member.linkedinUrl || '#'}
-                bio={member.bio}
               />
             ))}
           </div>
@@ -72,15 +71,15 @@ export const Team = () => {
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">35+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">40+</div>
                   <div className="text-gray-600">Years Combined Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">100+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">1000+</div>
                   <div className="text-gray-600">Training Sessions Delivered</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                  <div className="text-3xl font-bold text-primary mb-2">20+</div>
                   <div className="text-gray-600">Industry Certifications</div>
                 </div>
               </div>
