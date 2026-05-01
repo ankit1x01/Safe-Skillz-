@@ -216,7 +216,6 @@ export const siteContent = {
         description: 'March marked a series of meaningful engagements across OPSWAT Academy and Cyber Secured India global community. From participating in the recent CWG2026 conference lead by Shinja Nagvekar, to celebrating International Women\'s Day with CyberWomen@Warwick in collaboration with the Warwick Cyber Security Society, Hemant Patkar, CISSP® connected with professionals at the OMPEG UK Winter Showcase 2026 in London, and most recently meeting the Virgin Money Cyber Security team in Scotland, the momentum has been strong. These initiatives were organized in coordination with SafeSkillz Ltd UK and Cyber Secured India, whose commitment continues to drive impact.',
         coverImage: 'uk photos/virginmoney(1).jpg',
         images: [
-          'uk photos/virginmoney(2).jpg',
           'uk photos/virginmoney(3).jpg',
           'uk photos/virginmoney(4).jpg',
         ],
