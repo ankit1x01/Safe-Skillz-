@@ -14,6 +14,7 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy'
 import { CookiePolicy } from './pages/CookiePolicy'
 import { Terms } from './pages/Terms'
 import { LearnerTerms } from './pages/LearnerTerms'
+import { Internship } from './pages/Internship'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/internship" element={<Internship />} />
               <Route path="/trainings" element={<Trainings />} />
               <Route path="/alliances" element={<Alliances />} />
               <Route path="/work" element={<Work />} />
