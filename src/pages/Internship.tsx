@@ -10,7 +10,7 @@ const phases = [
     color: 'bg-blue-50 border-blue-200',
     accent: 'text-blue-600',
     sessions: [
-      { topic: 'Introduction to Cybersecurity', trainer: 'Hemant Sir', date: '16th May' },
+      { topic: 'Introduction to Cybersecurity', trainer: 'Hemant P', date: '16th May' },
       { topic: 'Network Fundamentals for Cybersecurity', trainer: 'Sheetal G', date: '17th May' },
       { topic: 'Emerging Threats & Trends', trainer: 'Yash G', date: '23rd May' },
       { topic: 'Cloud Security Fundamentals', trainer: 'Tushar V', date: '24th May' },
