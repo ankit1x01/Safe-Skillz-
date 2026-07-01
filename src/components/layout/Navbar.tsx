@@ -5,6 +5,7 @@ import { Container } from '../ui/Container'
 
 const navLinks = [
   { label: 'Home', href: '/' },
+  { label: 'Events', href: '/events' },
   { label: 'Training & Internship', href: '/internship' },
   { label: 'Courses', href: '/trainings' },
   { label: 'Partners', href: '/alliances' },
