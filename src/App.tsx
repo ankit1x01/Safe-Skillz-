@@ -3,6 +3,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import { CookieConsent } from './components/common/CookieConsent'
+import { FloatingEventWidget } from './components/common/FloatingEventWidget'
 import { ScrollToTop } from './components/common/ScrollToTop'
 import { Home } from './pages/Home'
 import { Trainings } from './pages/Trainings'
@@ -43,6 +44,7 @@ function App() {
             </Routes>
           </main>
           <Footer />
+          <FloatingEventWidget />
           <CookieConsent />
         </div>
       </Router>
