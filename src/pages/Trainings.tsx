@@ -46,9 +46,6 @@ export const Trainings = () => {
             <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-slide-up">
               Comprehensive training portfolio covering all aspects of cybersecurity
             </p>
-            <div className="flex flex-wrap gap-4 justify-center text-sm">
-
-            </div>
           </div>
         </Container>
       </section>

@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Mail } from 'lucide-react'
 import { Container } from '../components/ui/Container'
 import { ContactForm } from '../components/forms/ContactForm'
 import { SEO } from '../components/seo/SEO'

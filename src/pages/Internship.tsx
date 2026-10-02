@@ -1,4 +1,5 @@
 import { Container } from '../components/ui/Container'
+import { NextBatchNotice } from '../components/common/NextBatchNotice'
 import { CTAStrip } from '../components/home/CTAStrip'
 import { SEO } from '../components/seo/SEO'
 import { CheckCircle, Calendar, Clock, Monitor, Users, Award, BookOpen, Briefcase, Target, ChevronRight } from 'lucide-react'
@@ -373,7 +374,7 @@ export const Internship = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { step: '1', title: 'Register', desc: 'Fill out the Google Form registration — rolling out immediately.' },
+              { step: '1', title: 'Register', desc: 'Registration opens when the next batch is announced.' },
               { step: '2', title: 'Email Verification', desc: 'Verify your email address to confirm your spot.' },
               { step: '3', title: 'WhatsApp Group', desc: 'Get added to the WhatsApp group for updates and Zoom links.' },
               { step: '4', title: 'Start Learning', desc: 'Attend live sessions, submit assignments, and complete labs.' },
@@ -387,26 +388,10 @@ export const Internship = () => {
               </div>
             ))}
           </div>
-
-          {/* Register CTA */}
-          <div className="text-center mt-12">
-            <div className="inline-block p-8 bg-white rounded-2xl border-2 border-primary shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Ready to Apply?</h3>
-              <p className="text-gray-600 mb-6">Open to UK residents only. Limited seats available.</p>
-              <a 
-                href="https://us06web.zoom.us/meeting/register/Sro32WMhQv65BOf-fvLAbA"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg"
-              >
-                Register Your Interest
-                <ChevronRight className="w-5 h-5" />
-              </a>
-                
-            </div>
-          </div>
         </Container>
       </section>
+
+      <NextBatchNotice note="Open to UK residents only. Limited seats available." />
 
       <CTAStrip />
     </div>
