@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ArrowRight, Clock, ExternalLink, Sparkles, X, ChevronUp } from 'lucide-react'
+import { ArrowRight, Clock, ExternalLink, X, ChevronUp } from 'lucide-react'
 import { CIDX_START, cidxEvent } from '../../data/cidx'
 
 export const FloatingEventWidget = () => {
@@ -51,24 +51,25 @@ export const FloatingEventWidget = () => {
     }
   }, [isExpanded])
 
-  // Hide widget if user is already on the dedicated CIDX event page
-  if (location.pathname === '/events/cidx') {
+  // Hide widget if user is already on the dedicated CIDX event page or event page
+  if (location.pathname === '/events/cidx' || location.pathname === '/events') {
     return null
   }
 
   return (
     <div
       ref={widgetRef}
-      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 select-none font-sans"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 select-none font-sans flex flex-col items-end"
     >
       {!isExpanded ? (
-        /* Collapsed Floating Pill Icon */
+        /* Collapsed Floating Pill Icon - Opens on hover or click */
         <button
+          onMouseEnter={() => setIsExpanded(true)}
           onClick={() => setIsExpanded(true)}
           className="group relative flex items-center gap-2.5 px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-full bg-slate-950/90 hover:bg-slate-900 text-white backdrop-blur-xl border border-blue-500/40 hover:border-blue-400 shadow-[0_10px_30px_rgba(0,0,0,0.6),0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_10px_35px_rgba(0,0,0,0.7),0_0_30px_rgba(37,99,235,0.5)] transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400"
           aria-expanded="false"
-          aria-label="Open upcoming CIDX event preview"
-          title="Click to view upcoming CIDX event banner & details"
+          aria-label="Open upcoming event preview"
+          title="Hover or click to view upcoming event banner & details"
         >
           {/* Subtle Ambient Radial Glow */}
           <span className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 opacity-25 group-hover:opacity-50 blur transition-opacity duration-300 -z-10" />
@@ -79,12 +80,8 @@ export const FloatingEventWidget = () => {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
           </span>
 
-          <Sparkles className="w-4 h-4 text-cyan-400 group-hover:rotate-12 transition-transform duration-300" />
-
           <div className="flex items-center gap-1.5 text-xs sm:text-sm font-semibold tracking-wide">
-            <span className="text-white font-bold">CIDX 2026</span>
-            <span className="text-slate-500 hidden sm:inline">•</span>
-            <span className="text-slate-300 text-xs hidden sm:inline">7 Nov</span>
+            <span className="text-white font-bold">Upcoming</span>
           </div>
 
           <span className="text-blue-400/80 group-hover:text-blue-300 group-hover:-translate-y-0.5 transition-all duration-200">
