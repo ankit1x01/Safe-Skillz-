@@ -1,8 +1,20 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Container } from '../components/ui/Container'
 import { CTAStrip } from '../components/home/CTAStrip'
 import { SEO } from '../components/seo/SEO'
-import { ArrowLeft, ExternalLink, Users, Gift, MapPin, Calendar, Clock } from 'lucide-react'
+import { cidxEvent } from '../data/cidx'
+import {
+  ArrowLeft,
+  Calendar,
+  ChevronDown,
+  Clock,
+  ExternalLink,
+  Gift,
+  MapPin,
+  ShieldCheck,
+  Users,
+} from 'lucide-react'
 
 const REGISTER_LONDON = 'https://www.eventbrite.co.uk/e/opswat-academy-cyber-challenge-uk-2026-london-tickets-1991764393919'
 const REGISTER_NEWPORT = 'https://www.eventbrite.co.uk/e/opswat-academy-cyber-challenge-uk-2026-newport-wales-tickets-1991711496702'
@@ -256,7 +268,7 @@ const LondonRecap = ({ onBack }: { onBack: () => void }) => (
         </div>
 
         <div className="space-y-24">
-          {speakers.map((speaker, si) => (
+          {speakers.map((speaker) => (
             <article key={speaker.id} className="border-b border-gray-100 pb-24 last:border-0 last:pb-0">
               
               {/* Speaker header — images first, large and horizontal */}
@@ -363,8 +375,13 @@ export const Events = () => {
               Back to All Events
             </button>
             <div className="text-white max-w-4xl">
-              <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4 animate-fade-in">
-                {selected.badge}
+              <div className="flex flex-wrap items-center gap-3 mb-4 animate-fade-in">
+                <span className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium">
+                  {selected.badge}
+                </span>
+                <span className="inline-block px-3 py-2 bg-white/10 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider">
+                  Concluded
+                </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-up">
                 {selected.title}
@@ -421,7 +438,7 @@ export const Events = () => {
                           <div>
                             <h3 className="text-lg font-bold text-gray-900">London</h3>
                             <p className="text-sm text-gray-600">Queen Mary University of London, Mile End Rd, London E1 4NS</p>
-                            <p className="text-sm font-semibold text-primary mt-1">Event Concluded</p>
+                            <p className="text-sm font-semibold text-gray-500 mt-1">Event Concluded</p>
                           </div>
                         </div>
                         <button
@@ -435,10 +452,11 @@ export const Events = () => {
                           href={REGISTER_LONDON}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 w-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-4 py-2 rounded-xl transition-colors duration-200 text-sm"
+                          className="flex items-center justify-center gap-2 w-full border-2 border-gray-300 text-gray-500 px-4 py-2 rounded-xl transition-colors duration-200 text-sm cursor-not-allowed"
+                          aria-disabled="true"
+                          onClick={(e) => e.preventDefault()}
                         >
-                          Register on Eventbrite
-                          <ExternalLink size={14} />
+                          Registrations Closed
                         </a>
                       </div>
 
@@ -449,7 +467,7 @@ export const Events = () => {
                           <div>
                             <h3 className="text-lg font-bold text-gray-900">Newport, Wales</h3>
                             <p className="text-sm text-gray-600">Newport, Wales — venue details on registration page</p>
-                            <p className="text-sm font-semibold text-gray-500 mt-1">Upcoming</p>
+                            <p className="text-sm font-semibold text-gray-500 mt-1">Event Concluded</p>
                           </div>
                         </div>
                         <div className="flex items-center justify-center gap-2 w-full bg-gray-200 text-gray-500 font-semibold px-4 py-3 rounded-xl mb-2 text-sm">
@@ -459,10 +477,11 @@ export const Events = () => {
                           href={REGISTER_NEWPORT}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 w-full border-2 border-gray-300 text-gray-600 hover:border-primary hover:text-primary font-semibold px-4 py-2 rounded-xl transition-colors duration-200 text-sm"
+                          className="flex items-center justify-center gap-2 w-full border-2 border-gray-300 text-gray-500 px-4 py-2 rounded-xl transition-colors duration-200 text-sm cursor-not-allowed"
+                          aria-disabled="true"
+                          onClick={(e) => e.preventDefault()}
                         >
-                          Register on Eventbrite
-                          <ExternalLink size={14} />
+                          Registrations Closed
                         </a>
                       </div>
                     </div>
@@ -518,24 +537,23 @@ export const Events = () => {
                     </div>
                   </div>
 
-                  {selected.id === 'movie-screening' ? (
-                    <div className="space-y-3 pt-2">
-                      <a href={REGISTER_LONDON} target="_blank" rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200 shadow">
-                        🏙️ Register — London <ExternalLink size={16} />
-                      </a>
-                      <a href={REGISTER_NEWPORT} target="_blank" rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-primary text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200 shadow">
-                        🏴󠁧󠁢󠁷󠁬󠁳󠁿 Register — Newport <ExternalLink size={16} />
-                      </a>
-                    </div>
-                  ) : (
-                    <a href={REGISTER_LONDON} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition-colors duration-200 shadow-lg mt-2">
-                      Register Now <ExternalLink size={18} />
-                    </a>
-                  )}
-                  <p className="text-xs text-gray-500 text-center">Seats are limited — secure your spot today.</p>
+                  <div className="p-4 rounded-xl bg-gray-100 border border-gray-200 text-center">
+                    <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
+                      This event has concluded
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      Registrations are closed for Cyber Challenge UK 2026.
+                    </p>
+                  </div>
+                  <Link
+                    to="/events/cidx"
+                    className="flex items-center justify-center gap-2 w-full bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-4 rounded-xl transition-colors duration-200 shadow-lg mt-2"
+                  >
+                    Register for CIDX 2026 <ExternalLink size={18} />
+                  </Link>
+                  <p className="text-xs text-gray-500 text-center">
+                    Our next event — Saturday 7 November, free entry.
+                  </p>
                 </div>
               </div>
             </div>
@@ -562,9 +580,9 @@ export const Events = () => {
   return (
     <div>
       <SEO
-        title="Cyber Challenge UK 2026 | SafeSkillz Limited"
-        description="Join Cyber Challenge UK 2026 — a full-day cybersecurity event featuring a movie screening, expert talks, and a live Capture The Flag challenge. Co-hosted by SafeSkillz."
-        keywords="cyber challenge 2026, OPSWAT academy, cybersecurity event London, CTF, capture the flag"
+        title="Cybersecurity Events | SafeSkillz Limited"
+        description="Upcoming cybersecurity events from SafeSkillz — including OPSWAT CIDX, the Critical Infra Defense Experience on 7 November 2026. Co-hosted by SafeSkillz, supported by Cyber Secured India."
+        keywords="cybersecurity events UK, CIDX 2026, critical infrastructure security event, OT ICS security conference, CTF London, OPSWAT CIDX, SafeSkillz events"
         url="https://safeskillz.co.uk/events"
       />
 
@@ -577,85 +595,188 @@ export const Events = () => {
         <Container className="relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
             <div className="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4 animate-fade-in">
-              Co-hosted by SafeSkillz & OPSWAT Academy
+              Co-hosted by SafeSkillz &amp; OPSWAT Academy
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-slide-up">
-              Cyber Challenge UK 2026
+              Cybersecurity Events
             </h1>
             <p className="text-xl md:text-2xl text-gray-100 mb-8 animate-slide-up">
-              Watch, Learn & Hack. A full-day immersive cybersecurity event combining movie screening, expert insights, and a live Capture The Flag challenge across multiple UK locations.
+              Hands-on cybersecurity events across critical infrastructure defence, OT/ICS security
+              and live Capture the Flag challenges.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 max-w-2xl mx-auto">
-              {[
-                { label: 'Format', value: 'In Person' },
-                { label: 'Locations', value: 'London & Newport' },
-                { label: 'Organised by', value: 'SafeSkillz Ltd' },
-              ].map((item, i) => (
-                <div key={i} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-sm font-bold text-white">{item.value}</div>
-                  <div className="text-xs text-gray-200 mt-1">{item.label}</div>
+          </div>
+        </Container>
+      </section>
+
+      {/* ── FEATURED UPCOMING EVENT: CIDX ── */}
+      <section className="section-padding bg-white">
+        <Container>
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
+              Upcoming Event
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">OPSWAT CIDX 2026</h2>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-primary bg-white">
+            {/* Image banner — no overlay, artwork stays fully visible */}
+            <img
+              src={cidxEvent.heroImage}
+              alt="OPSWAT CIDX — Critical Infra Defense Experience"
+              className="w-full h-auto md:h-80 object-cover bg-white"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement
+                target.style.display = 'none'
+              }}
+            />
+
+            {/* Title block */}
+            <div className="bg-gradient-to-br from-primary-dark to-primary px-6 md:px-10 py-6 text-white">
+              <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+                {cidxEvent.eyebrow}
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold mb-1.5">{cidxEvent.title}</h3>
+              <p className="text-white/90 font-medium tracking-wide">{cidxEvent.tagline}</p>
+            </div>
+
+            {/* Body */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-6 md:p-10">
+              <div className="lg:col-span-2">
+                <p className="text-gray-600 leading-relaxed mb-6">{cidxEvent.summary}</p>
+
+                <div className="flex items-start gap-3 p-4 rounded-xl border border-primary/10 bg-primary/5 mb-6">
+                  <ShieldCheck className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <p className="text-sm text-gray-700">
+                    {cidxEvent.fee}. Co-hosted by {cidxEvent.coHostedBy}, supported by{' '}
+                    {cidxEvent.supportedBy}. Keynotes, live CTF, the Arsenal zone, panel discussions
+                    and the Cyber Security Awards (Cyber &amp; OT).
+                  </p>
                 </div>
-              ))}
+
+                <Link
+                  to="/events/cidx"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg"
+                >
+                  View Full Event Details
+                  <span>→</span>
+                </Link>
+              </div>
+
+              {/* Quick facts */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Calendar className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">Date</p>
+                    <p className="font-semibold text-gray-900">{cidxEvent.dateLabel}</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">Time</p>
+                    <p className="font-semibold text-gray-900">{cidxEvent.timeLabel}</p>
+                    <p className="text-xs text-gray-500">{cidxEvent.duration}</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-xs text-gray-500">Venue</p>
+                    <p className="font-semibold text-gray-900">{cidxEvent.venue}</p>
+                    <p className="text-xs text-gray-500">{cidxEvent.venueNote}</p>
+                  </div>
+                </div>
+                <a
+                  href={cidxEvent.registrationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full border-2 border-primary text-primary hover:bg-primary hover:text-white font-semibold px-6 py-3 rounded-xl transition-colors duration-200"
+                >
+                  Register Free <ExternalLink size={16} />
+                </a>
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* 3 Event Cards */}
-      <section className="section-padding bg-white">
+      {/* ── PAST EVENTS ── */}
+      <section className="section-padding bg-surface">
         <Container>
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4">
-              Three Experiences, One Day
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore the Event</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Click any card to see the full agenda, details, and registration link for that experience.
-            </p>
-          </div>
+          <details className="group bg-white rounded-2xl border border-gray-200 overflow-hidden">
+            <summary className="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none hover:bg-gray-50 transition-colors">
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold text-gray-900">
+                  Past Events — Cyber Challenge UK 2026
+                </h2>
+                <p className="text-sm text-gray-500 mt-1">
+                  Concluded · 3 experiences · London &amp; Newport
+                </p>
+              </div>
+              <ChevronDown className="w-6 h-6 text-primary flex-shrink-0 transition-transform duration-300 group-open:rotate-180" />
+            </summary>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {events.map((event) => (
-              <div
-                key={event.id}
-                onClick={() => setSelected(event)}
-                className="group cursor-pointer rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-primary/30 hover:-translate-y-1 bg-white"
-              >
-                <div className="p-5">
-                  <span className="inline-block text-xs font-bold text-primary bg-primary/10 px-3 py-1 rounded-full mb-3">
-                    {event.badge}
-                  </span>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
-                  <p className="text-primary text-sm font-medium mb-2">{event.tagline}</p>
-                  <p className="text-gray-500 text-sm line-clamp-3 leading-relaxed mb-4">
-                    {event.shortDesc}
+            <div className="px-6 pb-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {events.map((event) => (
+                  <div
+                    key={event.id}
+                    onClick={() => setSelected(event)}
+                    className="group/card cursor-pointer rounded-2xl overflow-hidden shadow-sm bg-gray-50 border border-gray-200 transition-all duration-300 hover:shadow-md hover:border-primary/30"
+                  >
+                    <div className="p-5 opacity-70 group-hover/card:opacity-100 transition-opacity duration-300">
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="inline-block text-xs font-bold text-gray-500 bg-gray-200 px-3 py-1 rounded-full">
+                          {event.badge}
+                        </span>
+                        <span className="inline-block text-[10px] font-bold uppercase tracking-wide text-gray-500 border border-gray-300 px-2 py-1 rounded-full">
+                          Concluded
+                        </span>
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-700 mb-2">{event.title}</h3>
+                      <p className="text-sm text-gray-500 mb-2">{event.tagline}</p>
+                      <p className="text-xs text-gray-500 line-clamp-2 leading-relaxed mb-4">
+                        {event.shortDesc}
+                      </p>
+                      <div className="flex items-center gap-1 text-primary text-sm font-semibold">
+                        <span>View Recap</span>
+                        <span>→</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Register CTA */}
+              <div className="text-center mt-12">
+                <div className="inline-block p-8 bg-surface rounded-2xl border-2 border-primary shadow-lg">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                    Missed Cyber Challenge UK 2026?
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    Catch up on the speaker insights and event highlights, or join us at the next event.
                   </p>
-                  <div className="flex items-center gap-1 text-primary text-sm font-semibold group-hover:gap-2 transition-all duration-200">
-                    <span>View Details</span>
-                    <span>→</span>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button
+                      onClick={() => setShowLondon(true)}
+                      className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg"
+                    >
+                      🏙️ View London Recap
+                    </button>
+                    <a
+                      href={cidxEvent.registrationUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-accent hover:bg-primary text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg"
+                    >
+                      Register for CIDX 2026 <ExternalLink size={18} />
+                    </a>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Register CTA */}
-          <div className="text-center mt-16">
-            <div className="inline-block p-8 bg-surface rounded-2xl border-2 border-primary shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">Secure Your Spot</h3>
-              <p className="text-gray-600 mb-6">Register now and be part of Cyber Challenge UK 2026.</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href={REGISTER_LONDON} target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg">
-                  🏙️ Register — London <ExternalLink size={18} />
-                </a>
-                <a href={REGISTER_NEWPORT} target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-accent hover:bg-primary text-white font-semibold px-8 py-4 rounded-xl transition-colors duration-200 shadow-lg">
-                  🏴󠁧󠁢󠁷󠁬󠁳󠁿 Register — Newport <ExternalLink size={18} />
-                </a>
-              </div>
             </div>
-          </div>
+          </details>
         </Container>
       </section>
 

@@ -338,9 +338,51 @@ export const siteContent = {
     ],
   },
 
+  nextBatch: {
+    badge: 'Next Batch Coming Soon',
+    headline: 'Registration opens with the next batch',
+    description:
+      'The current internship batch started on 19 September and registration has now closed. The next batch opens soon — register your interest and we will let you know as soon as dates are confirmed.',
+    buttonText: 'Register Your Interest',
+  },
+
   ctaStrip: {
     headline: 'Strengthen your cyber resilience today',
     description: "Ready to enhance your organization's cybersecurity capabilities?",
     buttonText: 'Get Started',
+  },
+
+  speakAtSafeskillz: {
+    eyebrow: 'Call for Speakers',
+    headline: 'Speaker Empanelment',
+    description:
+      'Join the SafeSkillz speaker panel. We run hands-on events across critical infrastructure defence, OT/ICS security and CTF challenges — if you work in security, engineering or operations and have a story worth telling, we would like to hear from you.',
+    formUrl: 'https://forms.gle/4v3CFeHTHptgkSvEA',
+    formName: 'Safeskillz Speaker Onboarding Form',
+    buttonText: 'Submit your speaker proposal',
+    secondaryButtonText: 'View upcoming events',
+    secondaryButtonHref: '/events',
+    benefits: [
+      {
+        icon: 'Mic',
+        title: 'A relevant audience',
+        description: 'OT/ICS engineers, SOC teams and security leaders who ask hard questions.',
+      },
+      {
+        icon: 'Video',
+        title: 'Sessions that get recorded',
+        description: 'Your talk becomes training material for our learner community.',
+      },
+      {
+        icon: 'Users',
+        title: 'A community, not a lecture hall',
+        description: 'Small, technical rooms rather than a thousand-seat auditorium.',
+      },
+      {
+        icon: 'Award',
+        title: 'Recognition',
+        description: 'Speaker credit across our site, event recaps and awards programme.',
+      },
+    ],
   },
 }

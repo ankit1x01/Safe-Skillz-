@@ -16,6 +16,7 @@ import { Terms } from './pages/Terms'
 import { LearnerTerms } from './pages/LearnerTerms'
 import { Internship } from './pages/Internship'
 import { Events } from './pages/Events'
+import { Cidx } from './pages/Cidx'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/events" element={<Events />} />
+              <Route path="/events/cidx" element={<Cidx />} />
               <Route path="/internship" element={<Internship />} />
               <Route path="/trainings" element={<Trainings />} />
               <Route path="/alliances" element={<Alliances />} />

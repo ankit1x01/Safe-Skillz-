@@ -1,8 +1,10 @@
-import { Award, Shield, Target, TrendingUp, Users } from 'lucide-react'
+import { Award, Shield, Target, Users } from 'lucide-react'
 import { CourseCard } from '../components/cards/CourseCard'
+import { CidxPopup } from '../components/common/CidxPopup'
 import { CTAStrip } from '../components/home/CTAStrip'
 import { Hero } from '../components/home/Hero'
 import { SEO } from '../components/seo/SEO'
+import { SpeakerSection } from '../components/home/SpeakerSection'
 import { Container } from '../components/ui/Container'
 import { SectionHeading } from '../components/ui/SectionHeading'
 import { siteContent } from '../data/content'
@@ -208,7 +210,10 @@ export const Home = () => {
         </Container>
       </section>
 
+      <SpeakerSection />
+
       <CTAStrip />
+      <CidxPopup />
     </div>
   )
 }

@@ -1,8 +1,12 @@
 {
   "name": "safeskillz-website",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
+  "description": "A production-ready, fully static React website for SafeSkillz Limited - a UK-based cybersecurity training provider. Built with Vite, React, TypeScript, and Tailwind CSS.",
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

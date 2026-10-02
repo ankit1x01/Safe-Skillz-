@@ -190,7 +190,7 @@ export const Gallery = ({ events }: GalleryProps) => {
   }
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {events.map((event, index) => (
+      {events.map((event) => (
         <div
           key={event.id}
           onClick={() => setSelectedEvent(event)}
